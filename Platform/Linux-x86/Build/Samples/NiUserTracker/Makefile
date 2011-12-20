@@ -14,7 +14,7 @@ ifneq "$(GLES)" "1"
 ifeq ("$(OSTYPE)","Darwin")
 	LDFLAGS += -framework OpenGL -framework GLUT
 else
-	USED_LIBS += glut
+	USED_LIBS += glut GL
 endif
 else
 	DEFINES += USE_GLES
