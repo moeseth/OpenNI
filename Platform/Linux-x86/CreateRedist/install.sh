@@ -101,7 +101,7 @@ if [ "$install" = yes ]; then
 	mkdir -p $INSTALL_INC
 	cp -r Include/* $INSTALL_INC
 	cp -r Platform/Linux-x86/Build/Common/Common* $INSTALL_INC
-	ln -s CommonCppMakefile ”${INSTALL_INC}CommonMakefile”
+	ln -s "${INSTALL_INC}CommonCppMakefile" ”${INSTALL_INC}CommonMakefile”
 	printf "OK\n"
 
 	# create database dir
