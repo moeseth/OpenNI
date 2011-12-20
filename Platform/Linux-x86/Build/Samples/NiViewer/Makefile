@@ -11,8 +11,8 @@ SRC_FILES = ../../../../../Samples/NiViewer/*.cpp
 ifeq ("$(OSTYPE)","Darwin")
 	LDFLAGS += -framework OpenGL -framework GLUT
 else
-	USED_LIBS += glut
-endif
+	USED_LIBS += glut GL
+endif 
 
 USED_LIBS += OpenNI
 
