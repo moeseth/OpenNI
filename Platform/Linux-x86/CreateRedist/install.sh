@@ -100,6 +100,8 @@ if [ "$install" = yes ]; then
 	printf "copying include files..."
 	mkdir -p $INSTALL_INC
 	cp -r Include/* $INSTALL_INC
+	cp -r Platform/Linux-x86/Build/Common/Common* $INSTALL_INC
+	ln -s CommonMakefile ”${INSTALL_INC}CommonCppMakefile”
 	printf "OK\n"
 
 	# create database dir
